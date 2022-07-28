@@ -34,10 +34,7 @@ namespace Devcell.Ads
             base.Awake();
 
             _interstitialAdAlreadyWasShown = false;
-
-            DontDestroyOnLoad(this);
             SceneManager.activeSceneChanged += OnSceneChanged_Init;
-
             if (hideBannerOnSceneChanged)
                 SceneManager.sceneLoaded += OnSceneLoaded_HideBannerAd;
         }
