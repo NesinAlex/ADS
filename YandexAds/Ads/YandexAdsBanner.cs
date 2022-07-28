@@ -10,7 +10,7 @@ namespace Devcell.Ads
 
         private Banner banner;
 
-        private void Start()
+        public void Initialize()
         {
             RequestBanner();
         }

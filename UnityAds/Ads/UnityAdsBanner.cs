@@ -15,7 +15,7 @@ namespace Devcell.Ads
 
         private readonly string _gameId = "4777617";
 
-        private void Start()
+        public void Initialize()
         {
             Advertisement.Initialize(_gameId, _testMode);
         }

@@ -31,6 +31,8 @@ namespace Devcell.Ads
 
         private void Awake()
         {
+            base.Awake();
+
             _interstitialAdAlreadyWasShown = false;
 
             DontDestroyOnLoad(this);

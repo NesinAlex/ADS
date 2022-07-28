@@ -7,7 +7,7 @@ namespace Devcell.Ads
     public class AdHelper : MonoBehaviour
     {
         [SerializeField]
-        List<Button> adButtons;
+        List<Button> adRewardButtons;
 
         private void Start()
         {
@@ -19,6 +19,6 @@ namespace Devcell.Ads
             AdController.GetInstance()?.OnAdHelperDestroyed();
         }
 
-        public List<Button> GetRewardButtons() => adButtons;
+        public List<Button> GetRewardButtons() => adRewardButtons;
     }
 }

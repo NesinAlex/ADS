@@ -61,7 +61,7 @@ namespace Devcell.Ads
         {
             Reward?.Initialize();
             Interstitial?.Initialize();
-            //Banner?.Initialize();
+            Banner?.Initialize();
             return this;
         }
 

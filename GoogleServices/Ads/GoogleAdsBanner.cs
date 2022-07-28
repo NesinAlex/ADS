@@ -8,7 +8,7 @@ namespace Devcell.Ads
         private BannerView _bannerView;
         private UnityAdsBanner _unityAdsBanner;
 
-        public void Start()
+        public void Initialize()
         {
             _unityAdsBanner = FindObjectOfType<UnityAdsBanner>();
 
