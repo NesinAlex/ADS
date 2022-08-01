@@ -3,8 +3,16 @@ using UnityEngine;
 
 namespace Devcell.Ads
 {
-    public abstract class AdService : MonoBehaviour, IAdService
+    public abstract class AdService : MonoBehaviour, IAdService, IComparable<AdService>
     {
+        [SerializeField]
+        private int _order;
+        public int Order
+        {
+            get { return _order; }
+            set { _order = value; }
+        }
+
         private IRewardedVideoAdService _reward;
         private IVideoAdService _interstitial;
         private IBannerAdService _banner;
@@ -96,5 +104,7 @@ namespace Devcell.Ads
             _interstitial = null;
             _banner = null;
         }
+
+        public int CompareTo(AdService other) => Order.CompareTo(other.Order);
     }
 }

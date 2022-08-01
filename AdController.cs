@@ -67,6 +67,8 @@ namespace Devcell.Ads
                 _adServices.Add(InitializeService(yandexAdService));
                 Debug.Log("Enable Yandex Ads Service");
             }
+
+            _adServices.Sort();
         }
 
         private IAdService InitializeService(IAdService adService)
